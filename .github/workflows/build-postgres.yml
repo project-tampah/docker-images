@@ -16,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        postgres: [13.5, 13.6, 14.0, 14.2]
+        postgres: [13.5, 13.6, 14.0, 14.2, 14.6]
 
     steps:
       - name: Checkout
