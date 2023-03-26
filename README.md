@@ -1,8 +1,8 @@
 # Docker images
 
-- [Postgres](https://hub.docker.com/r/projecttampah/postgres)
+<!-- - [Postgres](https://hub.docker.com/r/projecttampah/postgres) -->
 - [Postgres AWS backup](https://hub.docker.com/r/projecttampah/postgres-backup)
-- [AWS CLI](https://hub.docker.com/r/projecttampah/awscli)
+<!-- - [AWS CLI](https://hub.docker.com/r/projecttampah/awscli) -->
 
 ## Postgres Backup
 
