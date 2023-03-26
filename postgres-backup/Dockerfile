@@ -18,5 +18,7 @@ COPY psqlbackup /etc/cron.d/psqlbackup
 # Apply cron job
 RUN crontab /etc/cron.d/psqlbackup
 
+RUN mkdir /backups
+
 RUN touch /var/log/cron.log
 CMD crond && tail -f /var/log/cron.log
