@@ -1,5 +1,5 @@
 ---
-name: build postgres
+name: build postgres-backup
 
 on:
   push:
@@ -7,16 +7,12 @@ on:
       - "main"
 
 env:
-  DOCKER_FILE: ./postgres/Dockerfile
-  IMAGE_NAME: projecttampah/postgres
+  DOCKER_FILE: ./postgres-backup/Dockerfile
+  IMAGE_NAME: projecttampah/postgres-backup
 
 jobs:
-  postgres:
+  postgres-backup:
     runs-on: ubuntu-22.04
-
-    strategy:
-      matrix:
-        postgres: ["13.10", "14.7", "15.2"]
 
     steps:
       - name: Checkout
@@ -44,5 +40,4 @@ jobs:
           file: ${{ env.DOCKER_FILE }}
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ env.IMAGE_NAME }}:${{ matrix.postgres }}
-          build-args: POSTGRES_VERSION=${{ matrix.postgres }}
+          tags: ${{ env.IMAGE_NAME }}:1.0.0

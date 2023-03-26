@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
 ### View backups.
-###
-### Usage:
-###     $ docker-compose (exec |run --rm) postgres backups
 
 set -o errexit
 set -o pipefail

@@ -4,9 +4,6 @@
 ###
 ### Parameters:
 ###     <1> filename of an existing backup.
-###
-### Usage:
-###     $ docker-compose (exec |run --rm) postgres restore <1>
 
 set -o errexit
 set -o pipefail

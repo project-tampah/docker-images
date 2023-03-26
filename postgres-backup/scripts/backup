@@ -1,9 +1,6 @@
 #!/usr/bin/env bash
 
 ### Create a database backup.
-###
-### Usage:
-###     $ docker-compose (exec |run --rm) postgres backup
 
 set -o errexit
 set -o pipefail
