@@ -1,4 +1,4 @@
-FROM python:3.10.10-alpine3.17
+FROM python:3.11.3-alpine3.17
  
 # Install
 RUN apk update && apk add postgresql14-client busybox-openrc bash
@@ -21,4 +21,4 @@ RUN crontab /etc/cron.d/psqlbackup
 RUN mkdir /backups
 
 RUN touch /var/log/cron.log
-CMD crond && tail -f /var/log/cron.log
+CMD crond -f

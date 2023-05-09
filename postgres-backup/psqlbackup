@@ -1,1 +1,1 @@
-0 */6 * * * bash /scripts/backup.sh
+0 */6 * * * root bash /scripts/backup.sh > /proc/1/fd/1 2>/proc/1/fd/2
