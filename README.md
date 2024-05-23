@@ -6,8 +6,8 @@
 
 | Postgres    |  Tag  |
 | ----------- | ----- |
-| Postgres 14 | 1.0.0 |
-| Postgres 15 | 2.0.0 |
+| Postgres 14 | 1.1.0 |
+| Postgres 15 | 2.1.0 |
 
 ## Postgres Backup
 
@@ -23,3 +23,4 @@
 | AWS_ACCESS_KEY_ID       | AWS S3 Key id                                     |
 | AWS_SECRET_ACCESS_KEY   | AWS S3 Access key id                              |
 | AWS_STORAGE_BUCKET_NAME | AWS S3 Bucket name                                |
+| HEARTBEAT_URL           | Monitoring Heartbeat Url                          |

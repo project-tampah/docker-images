@@ -1,0 +1,14 @@
+#!/bin/sh
+
+### Run POST script
+
+set -o errexit
+set -o pipefail
+set -o nounset
+
+working_dir="$(dirname ${0})"
+source "${working_dir}/_sourced/constants.sh"
+source "${working_dir}/_sourced/messages.sh"
+
+#  check inline if variable is set
+[ -z "${HEARTBEAT_URL}" ] && curl -fsS -m 10 --retry 5 -o /dev/null ${HEARTBEAT_URL}

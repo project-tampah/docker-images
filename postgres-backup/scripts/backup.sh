@@ -16,3 +16,6 @@ info "Creating postgres backup ..."
 
 info "Uploading to aws s3 bucket ..."
 /scripts/upload
+
+info "Running POST Script ..."
+/scripts/post
