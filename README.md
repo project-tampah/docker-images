@@ -24,3 +24,9 @@
 | AWS_SECRET_ACCESS_KEY   | AWS S3 Access key id                              |
 | AWS_STORAGE_BUCKET_NAME | AWS S3 Bucket name                                |
 | HEARTBEAT_URL           | Monitoring Heartbeat Url                          |
+
+### Build & Push
+
+```bash
+docker buildx build --platform linux/amd64 -t projecttampah/postgres-backup:2.1.0 -f ./postgres-backup/Dockerfile postgres-backup --push
+```
