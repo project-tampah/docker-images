@@ -8,6 +8,7 @@
 | ----------- | ----- |
 | Postgres 14 | 1.1.0 |
 | Postgres 15 | 2.1.0 |
+| Postgres 16 | 3.0.0 |
 
 ## Postgres Backup
 

@@ -1,7 +1,7 @@
 FROM python:3.11-alpine3.20
 
 # Install
-RUN apk update && apk add postgresql15-client busybox-openrc bash curl
+RUN apk update && apk add postgresql16-client busybox-openrc bash curl
 
 # source: https://github.com/sekka1/aws-cli-docker/blob/master/1.15.47/Dockerfile
 RUN apk --no-cache update && \
