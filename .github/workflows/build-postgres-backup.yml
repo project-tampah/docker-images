@@ -40,4 +40,4 @@ jobs:
           file: ${{ env.DOCKER_FILE }}
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ${{ env.IMAGE_NAME }}:3.0.0
+          tags: ${{ env.IMAGE_NAME }}:4.0.0
