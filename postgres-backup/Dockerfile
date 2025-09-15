@@ -1,4 +1,4 @@
-FROM python:3.11-alpine3.20
+FROM python:3.13-alpine3.22
 
 # Install
 RUN apk update && apk add postgresql17-client busybox-openrc bash curl
